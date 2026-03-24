@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -20,7 +22,59 @@
 }
 
 body {
-  background: var(--background);
+
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+
+.text-brand-gradient {
+    background: linear-gradient(90deg, #4E87FC 0%, #0FBAA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* Fallback */
+    display: inline-block; /* Layout issues se bachne ke liye */
+  }
+
+
+  .btn-brand-primary {
+    /* Background Gradient */
+    background: linear-gradient(90deg, #4E87FC 0%, #0FBAA7 100%);
+    
+    /* Typography Settings */
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em; /* -2% */
+  
+    color: #ffffff;
+
+ 
+  
+    align-items: center;
+    justify-content: center;
+   /* py-4 px-10 */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+ 
+  }
+
+  /* Hover Effect (Optional but recommended) */
+  .btn-brand-primary:hover {
+    box-shadow: 0 10px 25px -5px rgba(78, 135, 252, 0.4);
+    transform: translateY(-2px);
+    opacity: 0.95;
+  }
+
+  /* Active Effect */
+  .btn-brand-primary:active {
+    transform: scale(0.96);
+  }

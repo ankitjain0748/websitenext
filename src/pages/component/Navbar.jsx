@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="w-full z-50 ">
       {/* 1440px Max-Width Container */}
-      <div className="max-w-[1440px] mx-auto py-[15px] ">
+      <div className="max-w-[1440px] mx-auto py-[15px] px-6 ">
         <div className="flex justify-between items-center ">
           
           {/* Logo Section */}

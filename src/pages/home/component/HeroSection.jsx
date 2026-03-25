@@ -15,7 +15,7 @@ import { HiSparkles } from "react-icons/hi"; // Using sparkles for the badge ico
 const HeroSection = () => {
 
   return (
-    <section className="relative w-ful overflow-hidden font-outfit  items-center justify-center pt-20">
+    <section className="relative w-full overflow-hidden font-outfit  items-center justify-center pt-20">
       
       {/* --- BACKGROUND BLOBS (Exact Coordinates) --- */}
       

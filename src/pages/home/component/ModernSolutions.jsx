@@ -1,0 +1,204 @@
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
+const ModernSolutions = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const titleGradient = {
+    background: "linear-gradient(180deg, #4E87FC 0%, rgba(78, 135, 252, 0.5) 77.7%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  };
+
+  const tabs = [
+    {
+      id: "saas",
+      label: "SaaS Platforms",
+      title: "Scalable SaaS Platforms",
+      desc: "We build scalable SaaS platforms that empower businesses to deliver services digitally while generating consistent, recurring revenue. From MVP to full-scale systems.",
+      benefits: [
+        "Subscription-based models with flexible pricing",
+        "Scalable cloud infrastructure",
+        "Secure, high-performance systems"
+      ],
+      footer: "Perfect for startups and businesses looking to scale.",
+      image: "https://framerusercontent.com/images/qK7Xn7D0XjXn8Z8Z8Z8Z8Z8Z8Z8.png"
+    },
+    {
+        id: "market",
+        label: "Marketplace Platforms",
+        title: "Multi-Vendor Marketplaces",
+        desc: "Connect buyers and sellers with a robust marketplace engine. Our platforms handle complex transactions and vendor management with ease.",
+        benefits: ["Advanced vendor dashboard", "Secure payment splitting", "Seamless user experience"],
+        footer: "Ideal for niche marketplaces.",
+        image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Marketplace"
+    },
+    { id: "data", label: "Data & Analytics Platforms", title: "Data Insights", desc: "Turn data into action.", benefits: ["Real-time visuals", "Predictive tools"], footer: "Data-driven growth.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Analytics" },
+    { id: "lead", label: "Lead Generation", title: "Smart Lead Gen", desc: "Automate funnels.", benefits: ["CRM sync", "Auto follow-ups"], footer: "Sales at scale.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Leads" },
+    { id: "auto", label: "Business Automation", title: "Workflows", desc: "Reduce manual work.", benefits: ["API Customization", "Task mapping"], footer: "Save time.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Auto" },
+    { id: "affiliate", label: "Affiliate Systems", title: "Partner Networks", desc: "Manage partners.", benefits: ["Deep tracking", "Payout automation"], footer: "Network scaling.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Affiliate" },
+  ];
+
+  const techLogs = [
+    { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
+    { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+    { name: "Shopify", icon: "https://cdn.worldvectorlogo.com/logos/shopify.svg" },
+    { name: "Node.Js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+    { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+    { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker-3.svg" },
+    { name: "OpenAI", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+    { name: "React Native", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  ];
+
+  return (
+   <section className="font-outfit py-28 px-4 relative overflow-hidden bg-[#FBFBFB] "
+     style={{ backgroundImage: "url('/images/gridbg.png')" }}>
+
+
+      
+  
+
+    
+
+      {/* 3. ABSOLUTE CIRCLES (GLOW EFFECTS) */}
+      {/* Magenta Circle */}
+      <div 
+        className="absolute pointer-events-none"
+        style={{
+            background: '#C760E3',
+            width: '911px', height: '745px',
+            top: '10%', right: '-20%',
+            filter: 'blur(400px)', opacity: 0.15, zIndex: 0
+        }}
+      />
+      {/* Blue Circle */}
+      <div 
+        className="absolute pointer-events-none"
+        style={{
+            background: '#4E87FC',
+            width: '1440px', height: '851px',
+            bottom: '-10%', left: '-10%',
+            filter: 'blur(400px)', opacity: 0.2, zIndex: 0
+        }}
+      />
+
+      <div className="max-w-[1440px] mx-auto relative z-10 px-6">
+        
+        {/* HEADER */}
+        <div className="text-center mb-16">
+          <h2 style={titleGradient} className="text-[48px] md:text-[64px] font-bold mb-6 leading-tight">
+            Solutions For Modern Businesses
+          </h2>
+          <p className="text-gray-500 max-w-3xl mx-auto text-[18px]">
+            We solve real business problems with smart, scalable technology solutions.
+          </p>
+        </div>
+
+        {/* TAB CARD */}
+        <div className="bg-white/80 backdrop-blur-md rounded-[48px] shadow-[0_20px_100px_rgba(0,0,0,0.05)] border border-white/50 p-6 md:p-12 mb-32">
+          
+          <div className="flex flex-wrap gap-4 justify-center mb-16">
+            {tabs?.map((tab, index) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(index)}
+                className={`px-8 py-5 rounded-2xl font-bold text-[15px] transition-all duration-500
+                  ${activeTab === index 
+                    ? 'bg-gradient-to-r from-[#4E87FC] to-[#14B8A6] text-white shadow-xl scale-105' 
+                    : 'bg-[#F3F4F6] text-[#666] hover:bg-gray-200'
+                  }`}
+              >
+                {tab?.label}
+              </button>
+            ))}
+          </div>
+
+          <div key={activeTab} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center animate-fadeIn">
+            <div className="space-y-8">
+              <p className="text-[#555] text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
+              
+              <div>
+                <h4 className="text-[#D946EF] font-bold text-sm tracking-[2px] mb-5 uppercase">Key Benefits:</h4>
+                <ul className="space-y-4">
+                  {tabs[activeTab].benefits?.map((benefit, i) => (
+                    <li key={i} className="flex items-center gap-4 text-[#111] font-semibold text-[17px]">
+                      <div className="w-2 h-2 rounded-full bg-gray-300" />
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <p className="text-gray-400 italic text-[16px] border-t border-gray-100 pt-6">{tabs[activeTab].footer}</p>
+            </div>
+
+            <div className="bg-[#E9ECF9]/50 rounded-[40px] p-10 flex justify-center items-center overflow-hidden min-h-[480px]">
+               <img src={tabs[activeTab].image} className="w-full h-auto object-contain transform rotate-[-3deg] scale-110 drop-shadow-2xl transition-all duration-1000" />
+            </div>
+          </div>
+        </div>
+
+        {/* TECHNOLOGIES SECTION */}
+      
+
+        {/* DOUBLE ROW SWIPER (Left & Right) */}
+     
+      </div>
+        <div className="text-center mb-16">
+          <h2 style={titleGradient} className="text-[48px] font-bold mb-4">Technologies</h2>
+          <p className="text-gray-500">Delivering reliable and maintainable systems with modern stacks.</p>
+        </div>
+
+         <div className="flex flex-col gap-8">
+          {/* Row 1: Left to Right */}
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={24}
+            slidesPerView={'auto'}
+            loop={true}
+            speed={5000}
+            autoplay={{ delay: 0, disableOnInteraction: false }}
+            className="logo-swiper pointer-events-none"
+          >
+            {techLogs.concat(techLogs).map((tech, i) => (
+              <SwiperSlide key={i} style={{ width: 'auto' }}>
+                <div className="bg-white border border-gray-100 px-8 py-4 rounded-[20px] flex items-center gap-4 shadow-sm">
+                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
+                  <span className="font-bold text-[#222] text-[18px]">{tech.name}</span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Row 2: Right to Left */}
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={24}
+            slidesPerView={'auto'}
+            loop={true}
+            speed={6000}
+            autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }}
+            className="logo-swiper pointer-events-none"
+          >
+            {[...techLogs].reverse().concat([...techLogs].reverse()).map((tech, i) => (
+              <SwiperSlide key={i} style={{ width: 'auto' }}>
+                <div className="bg-white border border-gray-100 px-8 py-4 rounded-[20px] flex items-center gap-4 shadow-sm">
+                  <img src={tech?.icon} alt={tech?.name} className="w-8 h-8 object-contain" />
+                  <span className="font-bold text-[#222] text-[18px]">{tech?.name}</span>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+      <style jsx global>{`
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fadeIn { animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .logo-swiper .swiper-wrapper { transition-timing-function: linear !important; }
+      `}</style>
+    </section>
+  );
+};
+
+export default ModernSolutions;

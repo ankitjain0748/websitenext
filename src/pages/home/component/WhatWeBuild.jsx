@@ -53,7 +53,7 @@ const WhatWeBuild = () => {
   return (
     <section className="  font-outfit">
       {/* Main Gradient Container */}
-      <div className="w-full  rounded-[40px] pt-[100px] pb-[80px] bg-[linear-gradient(104.28deg,#4E87FC_0.01%,#0FBAA7_100.01%)] text-white">
+      <div className="w-full  rounded-t-[40px] pt-[100px] pb-[80px] bg-[linear-gradient(104.28deg,#4E87FC_0.01%,#0FBAA7_100.01%)] text-white">
         
         {/* Header Section */}
 

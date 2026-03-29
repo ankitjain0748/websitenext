@@ -86,7 +86,7 @@ const Footer = () => {
               Services
             </h4>
             <ul className="grid grid-cols-1 gap-y-3">
-              {services.map((service) => (
+              {services?.map((service) => (
                 <li key={service}>
                   <a href="#" className="text-gray-400 hover:text-white text-[15px] transition-colors">
                     {service}
@@ -105,7 +105,7 @@ const Footer = () => {
               </h3>
             </div>
 
-            <button className="w-full py-4 rounded-xl bg-gradient-to-r from-[#4E87FC] to-[#14B8A6] font-bold text-white hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20">
+            <button className="w-full py-4 rounded-xl btn-brand-primary font-bold text-white hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20">
               Book Free Consultation
             </button>
 
@@ -125,7 +125,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[14px] text-gray-500">
-          <p>© Copyright 2026 JoynStack. All rights reserved.</p>
+          <p>© Copyright 2026 JoynStack.</p>
           
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>

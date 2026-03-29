@@ -6,6 +6,8 @@ import WhatWeBuild from './component/WhatWeBuild'
 import HelpBusiness from './component/HelpBusiness'
 import ModernSolutions from './component/ModernSolutions'
 import Footer from './component/Footer'
+import PortfolioTestimonials from './component/PortfolioTestimonials'
+import ScheduleSection from './component/ScheduleSection'
 
 
 export default function Page() {
@@ -17,6 +19,8 @@ export default function Page() {
     <WhatWeBuild />
     <HelpBusiness />
     <ModernSolutions />
+    <PortfolioTestimonials />
+    <ScheduleSection />
     <Footer />
       
     </div>

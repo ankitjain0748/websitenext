@@ -21,6 +21,11 @@ const partnersData = [
   { id: 5, img: "/icons/logo.png", alt: "V Unite" },
   { id: 6, img: "/icons/logo.png", alt: "CertifyCars" },
   { id: 7, img: "/icons/logo.png", alt: "MakaMobile" },
+    { id: 8, img: "/icons/logo.png", alt: "CT" },
+  { id: 9, img: "/icons/logo.png", alt: "Politis Roofing" },
+  { id: 10, img: "/icons/logo.png", alt: "V Unite" },
+  { id: 11, img: "/icons/logo.png", alt: "CertifyCars" },
+  { id: 12, img: "/icons/logo.png", alt: "MakaMobile" },
 ];
 
 const featuresData = [
@@ -60,11 +65,11 @@ const featuresData = [
 const TechnologyPartner = () => {
   return (
     // Path to your grid background image goes here
-    <section className="relative w-full pt-[120px] bg-[url('/images/gridbg.png')] bg-center bg-cover font-outfit">
+    <section className="relative w-full pt-[60px] md:pt-[80px] xl:pt-[120px] bg-[url('/images/gridbg.png')] bg-center bg-cover font-outfit">
       
       {/* --- TRUSTED BY SECTION (LOGO SLIDER) --- */}
-      <div className="max-w-[1440px] mx-auto px-6 ">
-        <p className="text-center text-[#585858] font-[400] text-[20px] uppercase tracking-[0.2em] mb-10">
+      <div className=" mx-auto px-2 lg:px-6 ">
+        <p className="text-center text-[#585858] font-[400] text-[20px] uppercase tracking-[0.2em] mb-4 md:mb-10">
           Trusted By
         </p>
         <Swiper
@@ -83,7 +88,7 @@ const TechnologyPartner = () => {
         >
           {partnersData.map((logo) => (
             <SwiperSlide key={logo?.id}>
-              <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm border border-[#E9E9E9] rounded-xl px-[30px] py-[20px]  shadow-sm">
+              <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm border border-[#E9E9E9] rounded-xl px-[20px] md:px-[30px] py-[10px] md:py-[20px]  shadow-sm">
               
                 <img src={logo?.img} className='h-[36px]' />
               </div>
@@ -93,11 +98,11 @@ const TechnologyPartner = () => {
       </div>
 
       {/* --- MAIN CONTENT --- */}
-      <div className="max-w-[1440px] mx-auto px-6 mt-[120px] mb-[116px]">
+      <div className="max-w-[1440px] mx-auto px-2 lg:px-4 pt-[60px] md:pt-[80px] xl:pt-[120px] mb-[60px] lg:mb-[116px]">
         
         {/* Header Section */}
-        <div className="text-center mb-[40px]">
-          <h2 className="text-4xl md:text-[42px] font-[700] text-[#4E87FC] mb-4 leading-[100%] font-outfit">
+        <div className="text-center mb-[20px] md:mb-[40px]">
+          <h2 className="text-3xl md:text-[42px] font-[700] text-[#4E87FC] mb-4 leading-[100%] font-outfit">
             Your Complete Technology Partner
           </h2>
           <p className="text-[#585858] md:text-[18px] max-w-3xl mx-auto font-[400]">
@@ -106,11 +111,11 @@ const TechnologyPartner = () => {
         </div>
 
         {/* --- GRID OF CARDS --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[30px]">
           {featuresData?.map((item, index) => (
             <div
               key={index}
-              className={`relative p-[40px] rounded-[20px] transition-all duration-300 flex flex-col items-start space-y-[30px]
+              className={`relative p-[20px] lg:p-[40px] rounded-[20px] transition-all duration-300 flex flex-col items-start space-y-[10px] md:space-y-[30px]
                 ${item.highlight 
                   ? 'bg-white border-2 border-[#F2D5F9] shadow-[0_20px_50px_rgba(182,104,220,0.15)] ring-4 ring-[#B668DC]/5' 
                   : 'bg-[#F4F4F4] border border-transparent hover:border-[#E9E9E9] hover:bg-white hover:shadow-xl'

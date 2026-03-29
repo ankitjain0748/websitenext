@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full z-50 ">
+    <nav className={`w-full z-50 ${isOpen ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       {/* 1440px Max-Width Container */}
       <div className="max-w-[1440px] mx-auto py-[15px] px-6 ">
         <div className="flex justify-between items-center ">
@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <button className="btn-brand-primary py-[14px] px-[25px] ">
               Contact Us
             </button>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="xl:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl">
+        <div className="xl:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl z-30">
           <div className="px-4 pt-4 pb-6 space-y-1">
             {navLinks.map((link) => (
               <a

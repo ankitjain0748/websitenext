@@ -6,11 +6,7 @@ import 'swiper/css';
 const ModernSolutions = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const titleGradient = {
-    background: "linear-gradient(180deg, #4E87FC 0%, rgba(78, 135, 252, 0.5) 77.7%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  };
+
 
   const tabs = [
     {
@@ -24,7 +20,7 @@ const ModernSolutions = () => {
         "Secure, high-performance systems"
       ],
       footer: "Perfect for startups and businesses looking to scale.",
-      image: "https://framerusercontent.com/images/qK7Xn7D0XjXn8Z8Z8Z8Z8Z8Z8Z8.png"
+      image: "/images/saas.jpg"
     },
     {
         id: "market",
@@ -50,6 +46,10 @@ const ModernSolutions = () => {
     { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker-3.svg" },
     { name: "OpenAI", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
     { name: "React Native", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+        { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+    { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker-3.svg" },
+    { name: "OpenAI", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+    { name: "React Native", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
   ];
 
   return (
@@ -57,10 +57,6 @@ const ModernSolutions = () => {
      style={{ backgroundImage: "url('/images/gridbg.png')" }}>
 
 
-      
-  
-
-    
 
       {/* 3. ABSOLUTE CIRCLES (GLOW EFFECTS) */}
       {/* Magenta Circle */}
@@ -84,11 +80,11 @@ const ModernSolutions = () => {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto relative z-10 px-6">
+      <div className="max-w-[1440px] mx-auto relative z-10 px-4">
         
         {/* HEADER */}
         <div className="text-center mb-16">
-          <h2 style={titleGradient} className="text-[48px] md:text-[64px] font-bold mb-6 leading-tight">
+          <h2  className="text-[48px] md:text-[64px] font-bold mb-6 leading-tight text-[#4E87FC]">
             Solutions For Modern Businesses
           </h2>
           <p className="text-gray-500 max-w-3xl mx-auto text-[18px]">
@@ -115,7 +111,7 @@ const ModernSolutions = () => {
             ))}
           </div>
 
-          <div key={activeTab} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center animate-fadeIn">
+          <div key={activeTab} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center modernanimate-fadeIn">
             <div className="space-y-8">
               <p className="text-[#555] text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
               
@@ -133,8 +129,8 @@ const ModernSolutions = () => {
               <p className="text-gray-400 italic text-[16px] border-t border-gray-100 pt-6">{tabs[activeTab].footer}</p>
             </div>
 
-            <div className="bg-[#E9ECF9]/50 rounded-[40px] p-10 flex justify-center items-center overflow-hidden min-h-[480px]">
-               <img src={tabs[activeTab].image} className="w-full h-auto object-contain transform rotate-[-3deg] scale-110 drop-shadow-2xl transition-all duration-1000" />
+            <div className=" rounded-[40px]  flex justify-center items-center">
+               <img src={tabs[activeTab].image} className="w-full h-auto object-contain transform  transition-all duration-1000" />
             </div>
           </div>
         </div>
@@ -146,7 +142,7 @@ const ModernSolutions = () => {
      
       </div>
         <div className="text-center mb-16">
-          <h2 style={titleGradient} className="text-[48px] font-bold mb-4">Technologies</h2>
+          <h2  className="text-[48px]  text-[#4E87FC] font-bold mb-4">Technologies</h2>
           <p className="text-gray-500">Delivering reliable and maintainable systems with modern stacks.</p>
         </div>
 
@@ -159,13 +155,13 @@ const ModernSolutions = () => {
             loop={true}
             speed={5000}
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            className="logo-swiper pointer-events-none"
+            className="modernlogo-swiper pointer-events-none"
           >
-            {techLogs.concat(techLogs).map((tech, i) => (
+            {techLogs?.map((tech, i) => (
               <SwiperSlide key={i} style={{ width: 'auto' }}>
                 <div className="bg-white border border-gray-100 px-8 py-4 rounded-[20px] flex items-center gap-4 shadow-sm">
-                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
-                  <span className="font-bold text-[#222] text-[18px]">{tech.name}</span>
+                  <img src={tech?.icon} alt={tech?.name} className="w-8 h-8 object-contain" />
+                  <span className="font-bold text-[#222] text-[18px]">{tech?.name}</span>
                 </div>
               </SwiperSlide>
             ))}
@@ -179,9 +175,9 @@ const ModernSolutions = () => {
             loop={true}
             speed={6000}
             autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }}
-            className="logo-swiper pointer-events-none"
+            className="modernlogo-swiper pointer-events-none"
           >
-            {[...techLogs].reverse().concat([...techLogs].reverse()).map((tech, i) => (
+            {techLogs?.map((tech, i) => (
               <SwiperSlide key={i} style={{ width: 'auto' }}>
                 <div className="bg-white border border-gray-100 px-8 py-4 rounded-[20px] flex items-center gap-4 shadow-sm">
                   <img src={tech?.icon} alt={tech?.name} className="w-8 h-8 object-contain" />
@@ -192,11 +188,7 @@ const ModernSolutions = () => {
           </Swiper>
         </div>
 
-      <style jsx global>{`
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fadeIn { animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-        .logo-swiper .swiper-wrapper { transition-timing-function: linear !important; }
-      `}</style>
+   
     </section>
   );
 };

@@ -127,7 +127,7 @@ const TechnologyPartner = () => {
               </div>
 
               {/* Text Content */}
-              <h3 className={`text-[26px] font-[600] tracking-[-1px] ${item?.highlight ? 'text-brand-gradient' : 'text-[#333333]'}`}>
+              <h3 className={`text-[22px] md:text-[26px] font-[600] tracking-[-1px] ${item?.highlight ? 'text-brand-gradient' : 'text-[#333333]'}`}>
                 {item?.title}
               </h3>
               <p className="text-[#585858] leading-[28px] font-[400] font-outfit ">

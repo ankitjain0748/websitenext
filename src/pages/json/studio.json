@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "title": "Motion Graphics Services",
+      "description": "Motion graphics are used to create engaging and visually appealing content.",
+      "features": [
+        "Social media videos",
+        "Promotional ads",
+        "Product animation"
+      ],
+      "image": "/studio/image1.png",
+      "reverse": false
+    },
+    {
+      "title": "After Effects Animation",
+      "description": "We create professional animations using Adobe After Effects for branding, product promotion, and engaging visuals.",
+      "features": [
+        "Logo animation",
+        "Product showcase",
+        "UI animation",
+        "Advertisement videos"
+      ],
+      "image": "/studio/image1.png",
+      "reverse": true
+    },
+    {
+      "title": "3D Modeling Services",
+      "description": "Advanced 3D models for product visualization and animation.",
+      "features": [
+        "Product modeling",
+        "3D rendering",
+        "Industrial design"
+      ],
+     "image": "/studio/image1.png",
+      "reverse": true
+    }
+  ]
+}

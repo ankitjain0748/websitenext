@@ -13,13 +13,13 @@ const ModernSolutions = () => {
       id: "saas",
       label: "SaaS Platforms",
       title: "Scalable SaaS Platforms",
-      desc: "We build scalable SaaS platforms that empower businesses to deliver services digitally while generating consistent, recurring revenue. From MVP to full-scale systems.",
+      desc: "We build scalable SaaS platforms that empower businesses to deliver services digitally while generating consistent, recurring revenue. From MVP to full-scale systems, our solutions are designed for performance, security, and long-term growth.",
       benefits: [
         "Subscription-based models with flexible pricing",
         "Scalable cloud infrastructure",
         "Secure, high-performance systems"
       ],
-      footer: "Perfect for startups and businesses looking to scale.",
+      footer: "Perfect for startups and businesses looking to build long-term, scalable digital product",
       image: "/images/saas.jpg"
     },
     {
@@ -34,7 +34,7 @@ const ModernSolutions = () => {
     { id: "data", label: "Data & Analytics Platforms", title: "Data Insights", desc: "Turn data into action.", benefits: ["Real-time visuals", "Predictive tools"], footer: "Data-driven growth.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Analytics" },
     { id: "lead", label: "Lead Generation", title: "Smart Lead Gen", desc: "Automate funnels.", benefits: ["CRM sync", "Auto follow-ups"], footer: "Sales at scale.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Leads" },
     { id: "auto", label: "Business Automation", title: "Workflows", desc: "Reduce manual work.", benefits: ["API Customization", "Task mapping"], footer: "Save time.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Auto" },
-    { id: "affiliate", label: "Affiliate Systems", title: "Partner Networks", desc: "Manage partners.", benefits: ["Deep tracking", "Payout automation"], footer: "Network scaling.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Affiliate" },
+    { id: "affiliate", label: "Affiliate & Partner Systems", title: "Partner Networks", desc: "Manage partners.", benefits: ["Deep tracking", "Payout automation"], footer: "Network scaling.", image: "https://via.placeholder.com/600x400/E9ECF9/4E87FC?text=Affiliate" },
   ];
 
   const techLogs = [
@@ -53,7 +53,7 @@ const ModernSolutions = () => {
   ];
 
   return (
-   <section className="font-outfit py-28 px-4 relative overflow-hidden bg-[#FBFBFB] "
+   <section className="font-outfit py-[60px] md:py-28 px-2 md:px-4 relative overflow-hidden bg-[#FBFBFB] "
      style={{ backgroundImage: "url('/images/gridbg.png')" }}>
 
 
@@ -80,30 +80,30 @@ const ModernSolutions = () => {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto relative z-10 px-4">
+      <div className="max-w-[1440px] mx-auto relative z-10  md:px-4">
         
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <h2  className="text-[48px] md:text-[64px] font-bold mb-6 leading-tight text-[#4E87FC]">
+        <div className="text-center mb-4 md:mb-16">
+          <h2  className="text-[30px] md:text-[42px] font-bold mb-2 md:mb-6 leading-tight text-[#4E87FC]">
             Solutions For Modern Businesses
           </h2>
-          <p className="text-gray-500 max-w-3xl mx-auto text-[18px]">
+          <p className="text-gray-500 max-w-3xl mx-auto text-[16px] md:text-[18px]">
             We solve real business problems with smart, scalable technology solutions.
           </p>
         </div>
 
         {/* TAB CARD */}
-        <div className="bg-white/80 backdrop-blur-md rounded-[48px] shadow-[0_20px_100px_rgba(0,0,0,0.05)] border border-white/50 p-6 md:p-12 mb-32">
+        <div className="bg-white/80 backdrop-blur-md rounded-[20px] shadow-[0_20px_100px_rgba(0,0,0,0.05)] border border-white/50 p-2 md:p-[24px] mb-32">
           
-          <div className="flex flex-wrap gap-4 justify-center mb-16">
+          <div className="flex overflow-x-auto gap-4 justify-center ">
             {tabs?.map((tab, index) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(index)}
-                className={`px-8 py-5 rounded-2xl font-bold text-[15px] transition-all duration-500
+                className={`px-2 py-2 md:px-8 md:py-5 rounded-2xl font-[600] text-[15px] md:text-[17px] transition-all duration-500
                   ${activeTab === index 
                     ? 'bg-gradient-to-r from-[#4E87FC] to-[#14B8A6] text-white shadow-xl scale-105' 
-                    : 'bg-[#F3F4F6] text-[#666] hover:bg-gray-200'
+                    : 'bg-[#F3F4F6] text-[#333333] hover:bg-gray-200'
                   }`}
               >
                 {tab?.label}
@@ -111,22 +111,23 @@ const ModernSolutions = () => {
             ))}
           </div>
 
-          <div key={activeTab} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center modernanimate-fadeIn">
-            <div className="space-y-8">
-              <p className="text-[#555] text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
+          <div key={activeTab} className="md:flex gap-16 modernanimate-fadeIn">
+          <div className='py-20 max-w-[570px]'>
+            <div className="space-y-8 ">
+              <p className="text-[#585858] text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
               
-              <div>
-                <h4 className="text-[#D946EF] font-bold text-sm tracking-[2px] mb-5 uppercase">Key Benefits:</h4>
-                <ul className="space-y-4">
-                  {tabs[activeTab].benefits?.map((benefit, i) => (
-                    <li key={i} className="flex items-center gap-4 text-[#111] font-semibold text-[17px]">
-                      <div className="w-2 h-2 rounded-full bg-gray-300" />
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
+              <div className=''>
+                <h4 className="text-[#C760E3] font-bold text-[20px] tracking-[2px] mb-2 uppercase">Key Benefits:</h4>
+              <ul className="list-disc marker:text-[#4A4A4A] list-inside">
+  {tabs[activeTab].benefits?.map((benefit, i) => (
+    <li key={i} className="text-[#4A4A4A] font-semibold text-[17px] mb-2">
+      {benefit}
+    </li>
+  ))}
+</ul>
               </div>
-              <p className="text-gray-400 italic text-[16px] border-t border-gray-100 pt-6">{tabs[activeTab].footer}</p>
+              <p className="text-[#585858] italic text-[18px] border-t border-gray-100 pt-2">{tabs[activeTab].footer}</p>
+            </div>
             </div>
 
             <div className=" rounded-[40px]  flex justify-center items-center">
@@ -141,12 +142,12 @@ const ModernSolutions = () => {
         {/* DOUBLE ROW SWIPER (Left & Right) */}
      
       </div>
-        <div className="text-center mb-16">
-          <h2  className="text-[48px]  text-[#4E87FC] font-bold mb-4">Technologies</h2>
-          <p className="text-gray-500">Delivering reliable and maintainable systems with modern stacks.</p>
+        <div className="text-center mb-[40px]">
+          <h2  className="text-[48px]  text-[#4E87FC] font-bold mb-[30px]">Technologies</h2>
+          <p className="text-gray-500 text-[18px]">Joynstack follows structured development practices designed to deliver reliable and maintainable systems.</p>
         </div>
 
-         <div className="flex flex-col gap-8">
+         <div className="flex flex-col gap-6">
           {/* Row 1: Left to Right */}
           <Swiper
             modules={[Autoplay]}

@@ -13,7 +13,6 @@ const WhatWeBuild = () => {
     "Strategy, Consulting & Scaling",
     "AI & Emerging Technologies",
   ];
-
   // Content Data (Normally you'd have different content for each tab)
   const services = [
     {

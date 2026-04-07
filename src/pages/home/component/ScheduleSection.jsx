@@ -33,14 +33,14 @@ Lets Start with us          </span>
         </div>
 
         {/* Main Heading with Gradient */}
-      <h1 className="text-4xl md:text-[60px] font-[700] leading-[1.1] tracking-tight max-w-5xl mb-8">
+      <h1 className="text-4xl md:text-[60px] font-[500] leading-[1.1] tracking-tight max-w-5xl mb-8">
   {/* Gradient Text Part */}
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#4E87FC] to-[#22D3EE]">
     Start Your Project With{" "}
   </span>
 
   {/* Joynstack Part with Underline */}
-  <span className="relative inline-block text-[#14B8A6]">
+  <span className="relative inline-block font-[700] text-[#14B8A6]">
     Joynstack
   <img src="/images/underline.svg" />
   </span>

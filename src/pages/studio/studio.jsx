@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../json/studio.json";
 
-const Services = () => {
+const Studio = () => {
   return (
     <div className="w-full px-4 md:px-10 lg:px-20 py-10 space-y-8">
 
@@ -49,4 +49,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Studio;

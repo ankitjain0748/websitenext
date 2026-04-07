@@ -38,7 +38,7 @@ const Hero = ({ title, content, subcontent, subtitle }) => {
                 </div>
 
                 {/* Main Heading with Gradient */}
-                <h1 className="text-[28px] md:text-[50px] lg:text-[60px] font-[700] leading-[1.4] md:leading-[1.1] tracking-tight max-w-5xl mb-2 md:mb-8">
+                <h1 className="text-[28px] md:text-[50px] lg:text-[60px] font-[700] leading-[1.4] md:leading-[1.1] tracking-tight max-w-6xl mb-2 md:mb-8">
                     <p className="text-brand-gradient">
                         {title || " Engineering Digital Systems   That Scale Businesses"}
                     </p>
@@ -51,7 +51,6 @@ const Hero = ({ title, content, subcontent, subtitle }) => {
 
                         {content || "        Joynstack Pvt. Ltd. is a digital engineering and creative technology company that builds scalable software platforms and advanced digital solutions for modern businesses."}                    </p>
                     <p className="hidden md:block text-[#64748B] text-[14px] md:text-[20px] leading-[22px] md:leading-[32px] font-[400]">
-
                         {
                             subcontent || "           We specialize in custom software development, enterprise applications, AI-powered systems, mobile apps, eCommerce infrastructures, and creative digital production including motion graphics and 3D visualization. "}                    </p>
                 </div>

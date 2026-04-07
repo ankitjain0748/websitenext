@@ -12,16 +12,16 @@ import Layout from '../component/Layout'
 export default function Page() {
   return (
     <div>
- <Layout>
-     <HeroSection />
-    <TechnologyPartner />
-    <WhatWeBuild />
-    <HelpBusiness />
-    <ModernSolutions />
-    <PortfolioTestimonials />
-    <ScheduleSection />
- </Layout>
-      
+      <Layout>
+        <HeroSection />
+        <TechnologyPartner />
+        <WhatWeBuild />
+        <HelpBusiness />
+        <ModernSolutions />
+        <PortfolioTestimonials />
+        <ScheduleSection />
+      </Layout>
+
     </div>
   )
 }

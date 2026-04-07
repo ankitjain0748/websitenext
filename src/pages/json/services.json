@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Custom Software Development",
+    "desc": "Bespoke software solutions designed to scale with your business and solve complex challenges efficiently.",
+    "tags": ["ERP Systems", "CRM Development", "SaaS Platforms", "AI Solutions"]
+  },
+  {
+    "title": "Web Platform Development",
+    "desc": "Robust, scalable web platforms built for performance, flexibility, and seamless user experiences.",
+    "tags": ["Dashboards", "Admin Panels", "Customer Portals", "Marketplace"]
+  },
+  {
+    "title": "Mobile App Development",
+    "desc": "High-performance mobile applications for iOS and Android with seamless UX.",
+    "tags": ["iOS Apps", "Android Apps", "React Native", "Flutter"]
+  },
+  {
+    "title": "UI/UX Design",
+    "desc": "User-centered design solutions that enhance usability, engagement, and overall user satisfaction.",
+    "tags": ["Wireframing", "Prototyping", "Design Systems", "User Research"]
+  },
+  {
+    "title": "E-commerce Development",
+    "desc": "Scalable and conversion-focused e-commerce platforms tailored to your business needs.",
+    "tags": ["Shopify", "WooCommerce", "Custom Stores", "Payment Integration"]
+  },
+  {
+    "title": "SaaS Product Development",
+    "desc": "End-to-end SaaS solutions with secure architecture and intuitive user experiences.",
+    "tags": ["Multi-Tenant Apps", "Cloud Infrastructure", "Subscription Systems", "APIs"]
+  },
+  {
+    "title": "Cloud & DevOps",
+    "desc": "Automated deployment, cloud infrastructure, and performance optimization for modern applications.",
+    "tags": ["AWS", "CI/CD", "Docker", "Kubernetes"]
+  },
+  {
+    "title": "AI & Automation",
+    "desc": "Intelligent automation and AI-powered solutions to streamline operations and boost efficiency.",
+    "tags": ["Machine Learning", "Chatbots", "Process Automation", "Data Analysis"]
+  }
+]

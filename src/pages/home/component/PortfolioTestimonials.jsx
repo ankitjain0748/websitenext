@@ -5,6 +5,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { FaStar } from "react-icons/fa";
 
 const PortfolioTestimonials = () => {
   
@@ -39,14 +40,14 @@ const PortfolioTestimonials = () => {
   ];
 
   return (
-    <div className="bg-[#5c8fff] relative font-sans text-white py-20 overflow-hidden">
+    <div className="bg-[#4E87FC] relative font-outfit text-white py-[60px] lg:py-[120px] overflow-hidden">
       
       {/* --- PORTFOLIO SECTION --- */}
-      <section className=" mx-auto  mb-32">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h2>
-          <p className="text-blue-100 text-sm md:text-base max-w-2xl mx-auto opacity-80">
-            Joystack follows structured development practices designed to deliver reliable and maintainable systems.
+      <section className=" mx-auto  px-2 mb-10 xl:mb-32">
+        <div className="text-center mb-4 lg:mb-12 ">
+          <h2 className="text-[30px] md:text-[42px] font-bold mb-2 md:mb-4">Our Portfolio</h2>
+          <p className="text-white text-[16px] md:text-[18px]  mx-auto ">
+         Joynstack follows structured development practices designed to deliver reliable and maintainable systems.
           </p>
         </div>
 
@@ -61,26 +62,29 @@ const PortfolioTestimonials = () => {
             el: '.testimonialscustom-pagination',
           }}
           breakpoints={{
-            1024: { slidesPerView: 1.5 }
+              320: { slidesPerView: 1 },
+            1320: { slidesPerView: 1.5 }
           }}
-          className="portfolio-swiper"
+          className="portfolio-swiper  "
         >
           {portfolioData?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 min-h-[450px]">
-                <div className="flex-1 space-y-6">
-                  <h3 className="text-2xl md:text-3xl font-semibold leading-snug">
+              <div className="bg-[linear-gradient(135deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.3)_100%)]  border border-white/70 rounded-[20px] p-4 md:p-8 xl:p-12 flex flex-col lg:flex-row items-center xl:items-strech gap-4 md:gap-10 ">
+                <div className="flex flex-col gap-[20px] md:gap-[40px]">
+                  <h3 className="text-[18px] md:text-[30px] font-[500] md:leading-[44px] font-outfit">
                     {item?.title}
                   </h3>
-                  <button className="bg-white text-[#4E87FC] px-8 py-3 rounded-xl font-bold hover:bg-opacity-90 transition-all">
-                    Know More
-                  </button>
+                  <button className="bg-white w-fit px-8 py-3 rounded-[10px] shadow-[0px_8px_24px_0px_#0000001A] hover:bg-opacity-90 transition-all">
+  <span className="text-brand-gradient text-[16px]">
+    Know More
+  </span>
+</button>
                 </div>
-                <div className="flex-1">
+                <div className="flex">
                   <img 
                     src="/images/portfoliio.png" 
                     alt="Mockup" 
-                    className="w-full rounded-3xl shadow-2xl  transition-transform duration-500"
+                    className="w-full rounded-[20px] shadow-2xl  transition-transform duration-500"
                   />
                 </div>
               </div>
@@ -92,15 +96,15 @@ const PortfolioTestimonials = () => {
         <div className="testimonialscustom-pagination flex justify-center gap-3 mt-10"></div>
       </section>
 
-       <div className="absolute  w-full flex bottom-70 justify-center  pointer-events-none select-none">
-   <h1 className="bg-clip-text text-transparent bg-[linear-gradient(180deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_85%)] font-black xl:text-[200px] tracking-tighter uppercase">
+       <div className="absolute  w-full flex bottom-70 md:bottom-90 lg:bottom-100 xl:bottom-80 justify-center  pointer-events-none select-none">
+   <h1 className="bg-clip-text text-transparent bg-[linear-gradient(180deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_85%)] font-black text-[50px] md:text-[100px] lg:text-[130px] xl:text-[200px] tracking-tighter uppercase">
   Testimonials
 </h1>
         </div>
 
 
       {/* --- TESTIMONIALS SECTION --- */}
-      <section className="relative pt-20">
+      <section className="relative pt-6 md:pt-22 lg:pt-20">
         {/* Background Large Text */}
        
 
@@ -119,30 +123,39 @@ const PortfolioTestimonials = () => {
           >
             {[...testimonialData, ...testimonialData].map((item, index) => (
               <SwiperSlide key={index} style={{ width: '400px' }}>
-                <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-8 rounded-[30px] h-full flex flex-col justify-between">
+                <div className="bg-[linear-gradient(135deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.4)_100%)]  border border-white/20 p-[20px] rounded-[20px] h-full flex flex-col justify-between">
                   <div>
-                    {/* Stars */}
-                    <div className="flex gap-1 mb-4 text-yellow-300">
-                      {[...Array(5)].map((_, i) => (
-                        <span key={i} className={i === 4 ? "opacity-40" : ""}>★</span>
-                      ))}
-                    </div>
-                    <p className="text-blue-50 text-base leading-relaxed italic opacity-90">
-                      "{item?.text}"
+                  
+                    <p className="text-white text-[14px] md:text-[20px] md:leading-[34px] italic ">
+                      {item?.text}
                     </p>
                   </div>
+
+                    {/* Stars */}
+                   <div className="flex gap-1 mb-4 text-white mt-[20px]">
+  {[...Array(5)].map((_, i) => (
+    <FaStar 
+      key={i} 
+      className={`${i === 4 ? "opacity-40" : ""}`} 
+    />
+  ))}
+</div>
                   
-                  <div className="mt-8 flex items-center gap-4">
-                    <img 
-                      src={`https://ui-avatars.com/api/?name=${item.name}&background=random`} 
-                      className="w-12 h-12 rounded-full border-2 border-white/30" 
-                      alt="avatar"
-                    />
-                    <div>
-                      <h4 className="font-bold text-lg">{item?.name}</h4>
-                      <p className="text-sm opacity-70">{item?.role}</p>
-                    </div>
-                  </div>
+               <div className="mt-8 flex items-center gap-4 font-outfit">
+  <img 
+    src="/images/user.png" 
+    className="w-12 h-12 rounded-full border-2 border-white/30 object-cover flex-shrink-0" 
+    alt="avatar"
+  />
+  <div className="h-12 flex flex-col gap-2 justify-center">
+    <h4 className="font-semibold text-[22px] leading-none">
+      {item?.name}
+    </h4>
+    <p className="text-[14px] leading-none">
+      {item?.role}
+    </p>
+  </div>
+</div>
                 </div>
               </SwiperSlide>
             ))}

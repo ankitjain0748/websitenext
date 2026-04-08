@@ -53,7 +53,7 @@ const ModernSolutions = () => {
   ];
 
   return (
-   <section className="font-outfit py-[60px] md:py-28 px-2 md:px-4 relative overflow-hidden bg-[#FBFBFB] "
+   <section className="font-outfit py-[60px] lg:py-28 px-2 md:px-4 relative overflow-hidden bg-[#FBFBFB] "
      style={{ backgroundImage: "url('/images/gridbg.png')" }}>
 
 
@@ -93,31 +93,31 @@ const ModernSolutions = () => {
         </div>
 
         {/* TAB CARD */}
-        <div className="bg-white/80 backdrop-blur-md rounded-[20px] shadow-[0_20px_100px_rgba(0,0,0,0.05)] border border-white/50 p-2 md:p-[24px] mb-32">
+        <div className="bg-white/80 backdrop-blur-md rounded-[20px] shadow-[0_20px_100px_rgba(0,0,0,0.05)] border border-white/50 p-2 py-[20px] md:p-[24px] mb-12 lg:mb-32">
           
-          <div className="flex overflow-x-auto gap-4 justify-center ">
-            {tabs?.map((tab, index) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(index)}
-                className={`px-2 py-2 md:px-8 md:py-5 rounded-2xl font-[600] text-[15px] md:text-[17px] transition-all duration-500
-                  ${activeTab === index 
-                    ? 'bg-gradient-to-r from-[#4E87FC] to-[#14B8A6] text-white shadow-xl scale-105' 
-                    : 'bg-[#F3F4F6] text-[#333333] hover:bg-gray-200'
-                  }`}
-              >
-                {tab?.label}
-              </button>
-            ))}
-          </div>
+<div className="flex md:justify-center overflow-x-auto lg:overflow-visible gap-3 md:gap-4 px-2 md:px-0 scrollbar-hide">
+  {tabs?.map((tab, index) => (
+    <button
+      key={tab.id}
+      onClick={() => setActiveTab(index)}
+      className={`whitespace-nowrap lg:whitespace-normal px-3 py-2 md:px-8 md:py-4 rounded-2xl font-semibold text-[14px] md:text-[17px] transition-all duration-300
+        ${activeTab === index 
+          ? 'bg-gradient-to-r from-[#4E87FC] to-[#14B8A6] text-white shadow-lg scale-105' 
+          : 'bg-[#F3F4F6] text-[#333333] hover:bg-gray-200'
+        }`}
+    >
+      {tab?.label}
+    </button>
+  ))}
+</div>
 
           <div key={activeTab} className="md:flex gap-16 modernanimate-fadeIn">
-          <div className='py-20 max-w-[570px]'>
+          <div className='py-6 md:py-20 max-w-[570px]'>
             <div className="space-y-8 ">
-              <p className="text-[#585858] text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
+              <p className="text-[#585858] text-[16px] md:text-[18px] leading-[1.6]">{tabs[activeTab].desc}</p>
               
               <div className=''>
-                <h4 className="text-[#C760E3] font-bold text-[20px] tracking-[2px] mb-2 uppercase">Key Benefits:</h4>
+                <h4 className="text-[#C760E3] font-bold text-[18px] md:text-[20px] tracking-[2px] mb-2 uppercase">Key Benefits:</h4>
               <ul className="list-disc marker:text-[#4A4A4A] list-inside">
   {tabs[activeTab].benefits?.map((benefit, i) => (
     <li key={i} className="text-[#4A4A4A] font-semibold text-[17px] mb-2">
@@ -126,7 +126,7 @@ const ModernSolutions = () => {
   ))}
 </ul>
               </div>
-              <p className="text-[#585858] italic text-[18px] border-t border-gray-100 pt-2">{tabs[activeTab].footer}</p>
+              <p className="text-[#585858] italic text-[16px] md:text-[18px] border-t border-gray-100 pt-2">{tabs[activeTab].footer}</p>
             </div>
             </div>
 
@@ -143,11 +143,11 @@ const ModernSolutions = () => {
      
       </div>
         <div className="text-center mb-[40px]">
-          <h2  className="text-[48px]  text-[#4E87FC] font-bold mb-[30px]">Technologies</h2>
-          <p className="text-gray-500 text-[18px]">Joynstack follows structured development practices designed to deliver reliable and maintainable systems.</p>
+          <h2  className="text-[30px] md:text-[42px]  text-[#4E87FC] font-bold mb-[10px] md:mb-[30px]">Technologies</h2>
+          <p className="text-gray-500 text-[16px] md:text-[18px]">Joynstack follows structured development practices designed to deliver reliable and maintainable systems.</p>
         </div>
 
-         <div className="flex flex-col gap-6">
+         <div className="flex flex-col gap-6 ">
           {/* Row 1: Left to Right */}
           <Swiper
             modules={[Autoplay]}
@@ -156,7 +156,7 @@ const ModernSolutions = () => {
             loop={true}
             speed={5000}
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            className="modernlogo-swiper pointer-events-none"
+            className="modernlogo-swiper pointer-events-none "
           >
             {techLogs?.map((tech, i) => (
               <SwiperSlide key={i} style={{ width: 'auto' }}>

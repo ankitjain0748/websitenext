@@ -131,4 +131,13 @@ body {
         /* Testimonial Marquee - Smooth Linear Continuous motion */
         .testimonial-marquee .swiper-wrapper {
           transition-timing-function: linear !important;
-        }       
+        } 
+        
+        
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -4,17 +4,25 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const logos = [
-    "https://via.placeholder.com/120x40?text=Logo1",
-    "https://via.placeholder.com/120x40?text=Logo2",
-    "https://via.placeholder.com/120x40?text=Logo3",
-    "https://via.placeholder.com/120x40?text=Logo4",
-    "https://via.placeholder.com/120x40?text=Logo5",
-    "https://via.placeholder.com/120x40?text=Logo6",
+  "/images/services/trustedlogo/logo.png",
+  "/images/services/trustedlogo/ct.png",
+  "/images/services/trustedlogo/kswift.png",
+  "/images/services/trustedlogo/makamobile.png",
+  "/images/services/trustedlogo/roofing.png",
+  "/images/services/trustedlogo/runstream.png",
+  "/images/services/trustedlogo/vunite.png",
+   "/images/services/trustedlogo/logo.png",
+  "/images/services/trustedlogo/ct.png",
+  "/images/services/trustedlogo/kswift.png",
+  "/images/services/trustedlogo/makamobile.png",
+  "/images/services/trustedlogo/roofing.png",
+  "/images/services/trustedlogo/runstream.png",
+  "/images/services/trustedlogo/vunite.png",
 ];
 function Trusted() {
     return (
 
-        <div className="mt-6 md:mt-10 mb-6">
+        <div className=" pb-[60px] pt-[30px] md:pb-[120px] md:pt-[60px] ">
             <p className="text-[#585858] text-center mb-5 text-[16px] md:text-[20px] leading-[24px] md:leading-[32px] font-[500]">
                 TRUSTED BY
             </p>
@@ -39,13 +47,10 @@ function Trusted() {
             >
                 {[...logos, ...logos].map((logo, index) => ( // duplicate for seamless loop
                     <SwiperSlide key={index}>
-                        <div className="flex items-center justify-center">
-                            <img
-                                src={logo}
-                                alt="logo"
-                                className="h-8 object-contain grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition duration-300"
-                            />
-                        </div>
+                        <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm border border-[#E9E9E9] rounded-xl px-[10px] md:px-[10px] py-[10px] md:py-[20px]  shadow-sm">
+              
+                <img src={logo} className='h-[36px]' />
+              </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

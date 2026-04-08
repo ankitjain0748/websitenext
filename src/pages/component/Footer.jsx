@@ -17,11 +17,11 @@ const Footer = () => {
   ];
 
   const socialIcons = [
-  { icon: <FaBehance />, link: "#" },
-  { icon: <FaInstagram />, link: "#" },
-  { icon: <FaXTwitter />, link: "#" },
-  { icon: <FaTelegramPlane />, link: "#" },
-  { icon: <FaLinkedinIn />, link: "#" },
+  { icon: <FaBehance size={24} />, link: "#" },
+  { icon: <FaInstagram size={24} />, link: "#" },
+  { icon: <FaXTwitter size={24} />, link: "#" },
+  { icon: <FaTelegramPlane size={24} />, link: "#" },
+  { icon: <FaLinkedinIn size={24} />, link: "#" },
 ];
 
   return (
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="bg-gradient-to-br from-white/10 to-white/40  rounded-[10px] p-2 flex">
                   <MapPin size={18} className="text-gray-300" />
                 </div>
-                <p className="text-white text-sm leading-relaxed">
+                <p className="text-white text-[16px] md:text-[18px] leading-relaxed">
                   16 MIIC, Jawahar Lal Nehru Marg, near MNIT Campus, Jaipur, Rajasthan 302017
                 </p>
               </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <div className="bg-gradient-to-br from-white/10 to-white/40  rounded-[10px] p-2 flex">
                   <Mail size={18} className="text-gray-300" />
                 </div>
-                <a href="mailto:info@joynstack.com" className="text-white text-sm hover:text-white transition-colors">
+                <a href="mailto:info@joynstack.com" className="text-white text-[16px] md:text-[18px] hover:text-white transition-colors">
                   info@joynstack.com
                 </a>
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <div className="bg-gradient-to-br from-white/10 to-white/40  rounded-[10px] p-2 flex">
                   <Phone size={18} className="text-gray-300" />
                 </div>
-                <a href="tel:+917666141466" className="text-white text-sm hover:text-white transition-colors">
+                <a href="tel:+917666141466" className="text-white text-[16px] md:text-[18px] hover:text-white transition-colors">
                   +91 7666141466
                 </a>
               </div>
@@ -75,14 +75,14 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div>
+          <div className="">
             <h4 className="text-[15px] md:text-[24px] font-bold tracking-widest uppercase mb-6 pb-2 border-b-2 border-transparent [border-image:linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)_1] inline-block pr-12">
               Quick Links
             </h4>
             <ul className="grid grid-cols-1 gap-y-3">
               {quickLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-white hover:text-white text-[16px] transition-colors">
+                  <a href="#" className="text-white/80 hover:text-white text-[16px] transition-colors">
                     {link}
                   </a>
                 </li>
@@ -92,13 +92,13 @@ const Footer = () => {
 
           {/* Column 3: Services */}
           <div>
-            <h4 className="text-[15px] md:text-[24px] font-bold tracking-widest uppercase mb-6 pb-2  border-b-2 border-transparent [border-image:linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)_1] inline-block pr-12">
+            <h4 className="text-[16px] md:text-[24px] font-bold tracking-widest uppercase mb-6 pb-2  border-b-2 border-transparent [border-image:linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)_1] inline-block pr-12">
               Services
             </h4>
             <ul className="grid grid-cols-1 gap-y-3">
               {services?.map((service) => (
                 <li key={service}>
-                  <a href="#" className="text-white hover:text-white text-[16px] transition-colors">
+                  <a href="#" className="text-white/80 hover:text-white text-[16px] transition-colors">
                     {service}
                   </a>
                 </li>
@@ -110,22 +110,22 @@ const Footer = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <span className="text-4xl">👋</span>
-              <h3 className="text-[24px] font-bold leading-tight">
+              <h3 className="rexr-[18px] md:text-[24px] font-bold leading-tight">
                 Have An Idea? Let's Build<br /> It Together.
               </h3>
             </div>
 
-            <button className="w-full py-4 rounded-xl btn-brand-primary font-bold text-white hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20">
+            <button className="w-full max-w-[300px] px-6 py-4 rounded-xl btn-brand-primary font-bold text-white hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20">
               Book Free Consultation
             </button>
-<div className="flex flex-wrap gap-3">
-  {socialIcons.map((item, i) => (
+<div className="flex flex-wrap gap-6">
+  {socialIcons?.map((item, i) => (
     <a 
       key={i} 
-      href={item.link}
-      className="bg-gradient-to-br from-white/10 to-white/40 backdrop-blur-md border border-white/20 rounded-[10px] p-3 flex items-center justify-center text-white text-[16px] hover:scale-105 transition-all"
+      href={item?.link}
+      className="bg-gradient-to-br from-white/10 to-white/40 backdrop-blur-md border border-white/20 rounded-[10px] p-2 flex items-center justify-center text-white text-[16px] hover:scale-105 transition-all"
     >
-      {item.icon}
+      {item?.icon}
     </a>
   ))}
 </div>
@@ -136,10 +136,10 @@ const Footer = () => {
       
       </div>
         <div className=" bg-[#14181E] mt-20 py-6 border-t border-white/5">
-        <div className='flex flex-col md:flex-row justify-between items-center gap-6 text-[14px] text-white max-w-[1440px] mx-auto'>
+        <div className='flex flex-col md:flex-row justify-between items-center gap-6 text-[16px] md:text-[18px] text-white max-w-[1440px] mx-auto'>
           <p>© Copyright 2026 JoynStack.</p>
           
-          <div className="flex gap-8">
+          <div className="flex gap-8 text-[16px] md:text-[18px]">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>

@@ -2,17 +2,21 @@ import React from 'react';
 import { HiSparkles } from "react-icons/hi"; // Using sparkles for the badge icons
 
 
-const ScheduleSection = () => {
+const StartWithUs = () => {
 
   return (
   <section 
   className="relative w-full overflow-hidden font-outfit flex flex-col items-center justify-center pt-20 bg-cover bg-center"
-
+  style={{ backgroundImage: "url('/images/schedulebg.png')" }}
 >
       
   
       
+      {/* Left Purple Blob */}
+ <div className="absolute pointer-events-none transition-opacity opacity-20 bg-[#B668DC] w-[677.97px] h-[582.46px] bottom-[24.31px] -left-[159.42px] blur-[100px] rounded-full" />
 
+{/* Right Blue Blob */}
+<div className="absolute pointer-events-none transition-opacity opacity-20 bg-[#4E87FC] w-[512.61px] h-[582.54px] bottom-[24.31px] -right-[175.94px] blur-[100px] rounded-full" />
 
 
 
@@ -21,7 +25,7 @@ const ScheduleSection = () => {
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 flex flex-col items-center text-center">
         
         {/* Floating Badge */}
-        <div className="flex items-center space-x-3 bg-white border border-[#E9E9E9] px-6 py-3 rounded-full shadow-[0px_8px_24px_0px_rgba(0,0,0,0.1)] mb-10 animate-fade-in">
+        <div className="flex items-center space-x-3 bg-white border border-[#E9E9E9] px-6 py-3 rounded-full shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] mb-10 animate-fade-in">
       <img src="/icons/Star.svg" />
           <span className="text-[12px] md:text-[16px] font-[600] tracking-[20%] text-[#B668DC] uppercase">
 Lets Start with us          </span>
@@ -43,9 +47,9 @@ Lets Start with us          </span>
 </h1>
 
         {/* Paragraph Text */}
-        <div className="max-w-3xl lg:max-w-4xl space-y-4 mb-12">
+        <div className="max-w-3xl lg:max-w-[1100px] space-y-4 mb-12">
           <p className="text-[#585858]  md:text-[20px] leading-[32px] font-[500]">
-      We work closely, deliberately, and selectively—partnering with businesses that value precision, clarity, and long-term thinking.
+            Joynstack Pvt. Ltd. is a digital engineering and creative technology company that builds scalable software platforms and advanced digital solutions for modern businesses.
           </p>
        
         </div>
@@ -70,4 +74,4 @@ Lets Start with us          </span>
   );
 };
 
-export default ScheduleSection;
+export default StartWithUs;

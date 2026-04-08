@@ -1,42 +1,97 @@
 [
   {
     "title": "Custom Software Development",
-    "desc": "Bespoke software solutions designed to scale with your business and solve complex challenges efficiently.",
-    "tags": ["ERP Systems", "CRM Development", "SaaS Platforms", "AI Solutions"]
+    "desc": "Joynstack develops custom software systems tailored to specific business operations and requirements. Unlike generic software products, custom solutions provide flexibility and control over workflows.",
+    "subdesc": "Our custom software systems are designed with scalable architecture so they can grow as business requirements evolve.",
+    "tags": [
+      "ERP platforms management",
+      "CRM systems management",
+      "Reporting and analytics dashboards",
+      "Warehouse management",
+      "Workflow automation",
+      "Affiliate tracking systems"
+    ]
   },
   {
     "title": "Web Platform Development",
-    "desc": "Robust, scalable web platforms built for performance, flexibility, and seamless user experiences.",
-    "tags": ["Dashboards", "Admin Panels", "Customer Portals", "Marketplace"]
+    "desc": "Joynstack develops modern web platforms designed to handle growing user bases and complex workflows.",
+    "subdesc": "We focus on building stable and maintainable web systems that integrate with APIs, mobile applications, and external platforms.",
+    "tags": [
+      "SaaS platforms",
+      "Business portals",
+      "Admin dashboards",
+      "Customer portals",
+      "API-driven platforms",
+      "Membership systems"
+    ]
   },
   {
-    "title": "Mobile App Development",
-    "desc": "High-performance mobile applications for iOS and Android with seamless UX.",
-    "tags": ["iOS Apps", "Android Apps", "React Native", "Flutter"]
+    "title": "Mobile Application Development",
+    "desc": "Joynstack develops cross-platform mobile applications that operate reliably across Android and iOS devices.",
+    "subdesc": "Our mobile applications integrate with backend systems and provide consistent user experiences across devices.",
+    "tags": [
+      "Delivery tracking apps",
+      "Customer service apps",
+      "Marketplace apps",
+      "Real-time applications"
+    ]
   },
   {
-    "title": "UI/UX Design",
-    "desc": "User-centered design solutions that enhance usability, engagement, and overall user satisfaction.",
-    "tags": ["Wireframing", "Prototyping", "Design Systems", "User Research"]
+    "title": "AI Development Services",
+    "desc": "Joynstack develops artificial intelligence systems that automate processes and provide meaningful insights from business data.",
+    "subdesc": "Our AI solutions help businesses improve efficiency and decision-making.",
+    "tags": [
+      "Recommendation systems",
+      "Automated workflows",
+      "Data analysis platforms",
+      "Predictive analytics dashboards",
+      "AI chatbots"
+    ]
   },
   {
-    "title": "E-commerce Development",
-    "desc": "Scalable and conversion-focused e-commerce platforms tailored to your business needs.",
-    "tags": ["Shopify", "WooCommerce", "Custom Stores", "Payment Integration"]
+    "title": "eCommerce Development",
+    "desc": "Joynstack builds eCommerce systems designed for high performance and scalability.",
+    "subdesc": "Our commerce platforms support growing product catalogs and high traffic volumes.",
+    "tags": [
+      "Online stores",
+      "Multi-vendor marketplaces",
+      "Subscription systems",
+      "Custom checkout workflows",
+      "Payment gateway integration",
+      "Inventory synchronization"
+    ]
   },
   {
-    "title": "SaaS Product Development",
-    "desc": "End-to-end SaaS solutions with secure architecture and intuitive user experiences.",
-    "tags": ["Multi-Tenant Apps", "Cloud Infrastructure", "Subscription Systems", "APIs"]
+    "title": "Motion Graphics Production",
+    "desc": "Joynstack produces motion graphics designed to enhance product presentations and marketing campaigns.",
+    "subdesc": "Motion graphics improve communication and make digital products more engaging.",
+    "tags": [
+      "Product explainer videos",
+      "Marketing animations",
+      "Platform walkthrough videos",
+      "Brand animations"
+    ]
   },
   {
-    "title": "Cloud & DevOps",
-    "desc": "Automated deployment, cloud infrastructure, and performance optimization for modern applications.",
-    "tags": ["AWS", "CI/CD", "Docker", "Kubernetes"]
+    "title": "3D Modeling Services",
+    "desc": "Joynstack produces realistic 3D models used for product presentations and marketing.",
+    "subdesc": "3D models allow businesses to present products and concepts visually before production.",
+    "tags": [
+      "Product models",
+      "Industrial models",
+      "Prototype visualization",
+      "Packaging models"
+    ]
   },
   {
-    "title": "AI & Automation",
-    "desc": "Intelligent automation and AI-powered solutions to streamline operations and boost efficiency.",
-    "tags": ["Machine Learning", "Chatbots", "Process Automation", "Data Analysis"]
+    "title": "3D Animation Services",
+    "desc": "Joynstack creates 3D animations that clearly demonstrate product features and functionality.",
+    "subdesc": "3D animations are widely used for product marketing and training.",
+    "tags": [
+      "Product animations",
+      "Mechanical demonstrations",
+      "Explainer animations",
+      "Marketing visuals"
+    ]
   }
 ]

@@ -14,18 +14,20 @@ import {
 import 'swiper/css';
 
 const partnersData = [
-  { id: 1, img: "/icons/logo.png", alt: "SunStream" },
-  { id: 2, img: "/icons/logo.png", alt: "KSwift" },
-  { id: 3, img: "/icons/logo.png", alt: "CT" },
-  { id: 4, img: "/icons/logo.png", alt: "Politis Roofing" },
-  { id: 5, img: "/icons/logo.png", alt: "V Unite" },
-  { id: 6, img: "/icons/logo.png", alt: "CertifyCars" },
-  { id: 7, img: "/icons/logo.png", alt: "MakaMobile" },
-    { id: 8, img: "/icons/logo.png", alt: "CT" },
-  { id: 9, img: "/icons/logo.png", alt: "Politis Roofing" },
-  { id: 10, img: "/icons/logo.png", alt: "V Unite" },
-  { id: 11, img: "/icons/logo.png", alt: "CertifyCars" },
-  { id: 12, img: "/icons/logo.png", alt: "MakaMobile" },
+ "/images/services/trustedlogo/logo.png",
+  "/images/services/trustedlogo/ct.png",
+  "/images/services/trustedlogo/kswift.png",
+  "/images/services/trustedlogo/makamobile.png",
+  "/images/services/trustedlogo/roofing.png",
+  "/images/services/trustedlogo/runstream.png",
+  "/images/services/trustedlogo/vunite.png",
+   "/images/services/trustedlogo/logo.png",
+  "/images/services/trustedlogo/ct.png",
+  "/images/services/trustedlogo/kswift.png",
+  "/images/services/trustedlogo/makamobile.png",
+  "/images/services/trustedlogo/roofing.png",
+  "/images/services/trustedlogo/runstream.png",
+  "/images/services/trustedlogo/vunite.png",
 ];
 
 const featuresData = [
@@ -86,11 +88,11 @@ const TechnologyPartner = () => {
           }}
           className="logo-swiper"
         >
-          {partnersData.map((logo) => (
+          {partnersData?.map((logo) => (
             <SwiperSlide key={logo?.id}>
               <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm border border-[#E9E9E9] rounded-xl px-[20px] md:px-[30px] py-[10px] md:py-[20px]  shadow-sm">
               
-                <img src={logo?.img} className='h-[36px]' />
+                <img src={logo} className='h-[36px]' />
               </div>
             </SwiperSlide>
           ))}

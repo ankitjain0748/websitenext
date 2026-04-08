@@ -15,7 +15,7 @@ const Services = () => {
               className="group relative flex gap-6 md:gap-10 items-start 
     border-b border-white/10 pb-6 md:pb-8 mb-6 md:mb-8
     last:border-none last:mb-0 
-    backdrop-blur-md transition-all duration-500" 
+    backdrop-blur-md transition-all duration-500"
             >
 
               {/* LEFT NUMBER */}

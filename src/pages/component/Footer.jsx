@@ -30,7 +30,7 @@ const Footer = () => {
       {/* Subtle background glow on the right */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#14B8A6] opacity-[0.05] blur-[150px] pointer-events-none" />
 
-      <div className="max-w-[1440px] mx-auto px-4 lg:px-0 pt-20 pb-10">
+      <div className="max-w-[1440px] mx-auto px-4 2xl:px-0 pt-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           
           {/* Column 1: Company Info */}
@@ -135,7 +135,7 @@ const Footer = () => {
         {/* Bottom Bar */}
       
       </div>
-        <div className=" bg-[#14181E] mt-20 py-6 border-t border-white/5">
+        <div className=" bg-[#14181E] mt-20 py-6 border-t border-white/5 px-4 2xl:px-0">
         <div className='flex flex-col md:flex-row justify-between items-center gap-6 text-[16px] md:text-[18px] text-white max-w-[1440px] mx-auto'>
           <p>© Copyright 2026 JoynStack.</p>
           

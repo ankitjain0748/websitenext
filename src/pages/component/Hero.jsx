@@ -2,6 +2,7 @@ import React from 'react';
 
 
 
+
 const Hero = ({ title, content, subcontent, subtitle, subcontent2 }) => {
 
     return (
@@ -60,6 +61,7 @@ const Hero = ({ title, content, subcontent, subtitle, subcontent2 }) => {
                 </div>
 
             </div>
+
         </section>
     );
 };
